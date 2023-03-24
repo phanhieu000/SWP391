@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>RoleFilter</filter-name>
+        <filter-class>filter.RoleFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RoleFilter</filter-name>
+        <url-pattern>/dashboard</url-pattern>
+        <url-pattern>/syllabusList</url-pattern>
+        <url-pattern>/syllabusDetail</url-pattern>
+        <url-pattern>/comboList</url-pattern>
+        <url-pattern>/comboList</url-pattern>
+        <url-pattern>/sessionList</url-pattern>
+        <url-pattern>/sessionDetail</url-pattern>
+        <url-pattern>/ploList</url-pattern>
+        <url-pattern>/ploDetail</url-pattern>
+        <url-pattern>/poList</url-pattern>
+        <url-pattern>/poDetail</url-pattern>
+        <url-pattern>/materialList</url-pattern>
+        <url-pattern>/materialDetail</url-pattern>
+        <url-pattern>/assessmentList</url-pattern>
+        <url-pattern>/assessmentDetail</url-pattern>
+        
+        
+
+
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
